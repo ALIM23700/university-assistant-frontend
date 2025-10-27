@@ -6,9 +6,9 @@ const Notice = () => {
   useEffect(() => {
     const fetchApprovedClasses = async () => {
       try {
-        const res = await fetch("http://localhost:3000/api/all"); // backend থেকে সব ক্লাস
+        const res = await fetch("http://localhost:3000/api/all"); 
         const data = await res.json();
-        // শুধুমাত্র approved ক্লাস দেখাবে
+   
         const approvedClasses = data.filter((c) => c.approved === true);
         setClasses(approvedClasses);
       } catch (err) {

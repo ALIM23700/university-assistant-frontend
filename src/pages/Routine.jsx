@@ -6,7 +6,7 @@ const Routine = () => {
   useEffect(() => {
     const token = localStorage.getItem("token");
 
-    fetch("http://localhost:3000/api/getroutine", {
+    fetch("https://university-assistant-backend.onrender.com/api/getroutine", {
       headers: {
         "Authorization": `Bearer ${token}`
       }

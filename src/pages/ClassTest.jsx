@@ -4,11 +4,11 @@ const ClassTest = () => {
   const [classtest, setClasstest] = useState([]);
 
   useEffect(() => {
-    const token = localStorage.getItem("token"); // get token from login
+    const token = localStorage.getItem("token");
 
-    fetch("http://localhost:3000/api/getclasstest", {
+    fetch("https://university-assistant-backend.onrender.com/api/getclasstest", {
       headers: {
-        "Authorization": `Bearer ${token}` // send token for verification
+        "Authorization": `Bearer ${token}`
       }
     })
       .then((res) => res.json())

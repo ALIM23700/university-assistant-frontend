@@ -6,7 +6,7 @@ const Assignment = () => {
   useEffect(() => {
     const token = localStorage.getItem("token");
 
-    fetch("http://localhost:3000/api/getassignment", {
+    fetch("https://university-assistant-backend.onrender.com/api/getassignment", {
       headers: {
         "Authorization": `Bearer ${token}`
       }

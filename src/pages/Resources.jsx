@@ -8,7 +8,7 @@ const Resources = () => {
 
   const fetchResources = async () => {
     try {
-      const res = await fetch("http://localhost:3000/api/get", {
+      const res = await fetch("https://university-assistant-backend.onrender.com/api/get", {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
@@ -27,7 +27,7 @@ const Resources = () => {
     formData.append("file", file);
 
     try {
-      const res = await fetch("http://localhost:3000/api/upload", {
+      const res = await fetch("https://university-assistant-backend.onrender.com/api/upload", {
         method: "POST",
         headers: { Authorization: `Bearer ${token}` },
         body: formData,
@@ -86,7 +86,7 @@ const Resources = () => {
           >
             <span>{res.title}</span>
             <a
-              href={`http://localhost:3000/api/download/${res.filename}`}
+              href={`https://university-assistant-backend.onrender.com/api/download/${res.filename}`}
               target="_blank"
               rel="noreferrer"
               className="text-blue-600 hover:underline"
