@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/HoME.JSX";
+import Home from "./pages/Home"
 import Features from "./pages/Features";
 import ClassTest from "./pages/ClassTest";
 import Assignment from "./pages/Assignment";
@@ -19,7 +19,7 @@ function App() {
       <Nav />
       <Routes>
         {/* Public Routes */}
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home></Home>} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
 
