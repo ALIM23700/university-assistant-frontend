@@ -6,7 +6,7 @@ import Assignment from "./pages/Assignment";
 import Routine from "./pages/Routine";
 import Resources from "./pages/Resources";
 import Cgpa_Calculator from "./pages/Cgpa_Calculator";
-import Admin from "./pages/AdMIN.JSX";
+import Admin from "./pages/Admin";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Notice from "./pages/Notice";
